@@ -23,15 +23,23 @@ module.exports = {
     MongoData: "mongodb+srv://kxklow:928zzl@cluster0.0cz6waa.mongodb.net/?retryWrites=true&w=majority",
     EmbedColor: "#6d2eb5",
     Owners: ["1131806691969728593"],
+    // You'll need to update these with working Lavalink servers when deploying
     Nodes: [
-    {
-        name: "Lavalink",
-        url: "lavalink.oops.wtf",
-        port: 2000,
-        auth: "www.freelavalink.org",
-        secure: false,
-    }
-],
+        {
+            name: "Main",
+            url: "lavalink-replit.lexnet.cc",
+            port: 443,
+            auth: "lexn3tl4v4l1nk",
+            secure: true,
+        },
+        {
+            name: "Backup",
+            url: "lavalink.oops.wtf", 
+            port: 443,
+            auth: "www.freelavalink.org",
+            secure: true,
+        }
+    ],
 
     hooks: {
         guildAdd: "https://discord.com/api/webhooks/1365929906311270480/NzvVA2oGWEwGY0-HUcmvqBrQTOtVkJ6Tpe07rJl95LtAtw0uzsYifxsSRNpwUABu1V0w",
