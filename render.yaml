@@ -14,15 +14,3 @@ services:
       - key: CLIENT_SECRET
         sync: false
     autoDeploy: true
-
-  # Website Service  
-  - type: web
-    name: eleven-website
-    env: node
-    plan: free
-    buildCommand: cd website && npm install
-    startCommand: cd website && npm start
-    envVars:
-      - key: PORT
-        value: 10000
-    autoDeploy: true

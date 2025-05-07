@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 // Serve the deployment guide as HTML 
 app.get('/RENDER_DEPLOYMENT_GUIDE.md', (req, res) => {
     try {
-        const mdPath = path.join(__dirname, '..', 'RENDER_DEPLOYMENT_GUIDE.md');
+        const mdPath = path.join(__dirname, 'RENDER_DEPLOYMENT_GUIDE.md');
         const mdContent = fs.readFileSync(mdPath, 'utf8');
         
         // Simple markdown to HTML conversion for headers and code blocks
