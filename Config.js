@@ -25,18 +25,11 @@ module.exports = {
     Owners: ["1131806691969728593"],
     Nodes: [
     {
-        name: "Main",
-        url: "lavalink.lexnet.cc",
-        port: 443,
-        auth: "lexn3tl4v4l1nk",
-        secure: true,
-    },
-    {
-        name: "Fallback",
+        name: "Lavalink",
         url: "lavalink.oops.wtf",
-        port: 443,
+        port: 2000,
         auth: "www.freelavalink.org",
-        secure: true,
+        secure: false,
     }
 ],
 

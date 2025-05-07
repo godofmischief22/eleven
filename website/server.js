@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Serve static files from the website directory
 app.use(express.static(path.join(__dirname)));
@@ -9,6 +9,11 @@ app.use(express.static(path.join(__dirname)));
 // Route for the homepage
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Health check route for Render
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
 });
 
 // Start the server
