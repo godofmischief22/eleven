@@ -25,18 +25,18 @@ module.exports = {
     Owners: ["1131806691969728593"],
     Nodes: [
     {
-        name: "AjieNode1",
-        url: "lava-v3.ajieblogs.eu.org",
+        name: "Main",
+        url: "lavalink.lexnet.cc",
         port: 443,
-        auth: "https://dsc.gg/ajidevserver",
+        auth: "lexn3tl4v4l1nk",
         secure: true,
     },
     {
-        name: "AjieNode2",
-        url: "lava-v3.ajieblogs.eu.org",
-        port: 80,
-        auth: "https://dsc.gg/ajidevserver",
-        secure: false,
+        name: "Fallback",
+        url: "lavalink.oops.wtf",
+        port: 443,
+        auth: "www.freelavalink.org",
+        secure: true,
     }
 ],
 
